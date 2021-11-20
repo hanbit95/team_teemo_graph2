@@ -191,8 +191,8 @@
                     .interpolator(d3.interpolateSpectral);
 
 
-                var force = d3.forceSimulation()
-                    .nodes(d3.values(selectedNodeData))
+                var force = d3.forceSimulation(selectedNodeData)
+                //   .nodes(d3.values(selectedNodeData)) bug fixed
                     .force("link", d3.forceLink(selectedEdgeData).id(function (d) { return d.id; }).distance(100).strength(1))
                     .force("center", d3.forceCenter(width / 2, height / 2))
                     .force("x", d3.forceX())
