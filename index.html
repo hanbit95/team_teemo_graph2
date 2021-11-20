@@ -78,7 +78,7 @@
             }),
             // uncomment when edges_all.csv is ready
             // uploaded
-            d3.dsv(",", "data/edges_all.csv", function (d) {
+            d3.dsv(",", "./edges_all.csv", function (d) {
                 return {
                     source: d.source,
                     target: d.target,
@@ -86,31 +86,31 @@
                 }
             }),
 
-            d3.dsv(",", "data/nodes_eun1.csv", function (d) {
+            d3.dsv(",", "./nodes_eun1.csv", function (d) {
                 return {
                     id: d.id,
                     group: +d.group
                 }
             }),
-            d3.dsv(",", "data/nodes_euw1.csv", function (d) {
+            d3.dsv(",", "./nodes_euw1.csv", function (d) {
                 return {
                     id: d.id,
                     group: +d.group
                 }
             }),
-            d3.dsv(",", "data/nodes_jp1.csv", function (d) {
+            d3.dsv(",", "./nodes_jp1.csv", function (d) {
                 return {
                     id: d.id,
                     group: +d.group
                 }
             }),
-            d3.dsv(",", "data/nodes_kr.csv", function (d) {
+            d3.dsv(",", "./nodes_kr.csv", function (d) {
                 return {
                     id: d.id,
                     group: +d.group
                 }
             }),
-            d3.dsv(",", "data/nodes_na1.csv", function (d) {
+            d3.dsv(",", "./nodes_na1.csv", function (d) {
                 return {
                     id: d.id,
                     group: +d.group
@@ -118,7 +118,7 @@
             }),
             // uncomment when nodes_all.csv is ready
             // uploaded on the repo
-            d3.dsv(",", "data/nodes_all.csv", function (d) {
+            d3.dsv(",", "./nodes_all.csv", function (d) {
                 return {
                     id: d.id,
                     group: +d.group
